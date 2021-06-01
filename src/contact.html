@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +12,10 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
+
 <body>
-    <header><!--Start header-->
+    <header>
+        <!--Start header-->
         <div class="logo">
             <img src="images/logo.png" alt="Website logo">
         </div>
@@ -24,10 +27,29 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </header><!--End header-->
+    </header>
+    <!--End header-->
 
-    <!--Start footer-->
+    <header class="subheader">
+        <!--Start sub header-->
+        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing</h1>
+    </header>
+    <!--End sub header-->
+
+    <section class="from">
+        <form action="/" method="get">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
     <footer>
+        <!--Start footer-->
         <div class="footer-left">
             <p>Designed and coded by <strong>Mohamed Hany</strong></p>
         </div>
@@ -41,4 +63,5 @@
     <script src="js/vendors/bootstrap.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
