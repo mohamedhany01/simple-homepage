@@ -1,140 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hi! my name is Mohamed Hany is this my website">
-    <meta name="keywords" content="homepage, personal">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hi! my name is Mohamed Hany is this my website"
+    />
+    <meta name="keywords" content="homepage, personal" />
     <title>Home</title>
-    <link rel="stylesheet" href="css/vendors/bootstrap.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-</head>
-<body>
-    <header><!--Start header-->
-        <div class="logo">
-            <img src="images/logo.png" alt="Website logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <link rel="stylesheet" href="css/vendors/bootstrap.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <!--Start header-->
+      <header class="main">
+        <div class="row">
+          <div class="logo col-2">
+            <a href="index.html"
+              ><img
+                src="images/logo.png"
+                alt="Website logo"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <nav class="col-10">
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="hobbies.html">Hobbies</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-    </header><!--End header-->
+          </nav>
+        </div>
+      </header>
+      <!--End header-->
 
-    <section class="hero"><!--Start hero section-->
-        <div class="hero-left">
-            <h1>Hi there&#33; yes, you</h1>
-            <p>I am talking to you. Welcome to my website&#58;&#41;</p>
+      <!--Start hero section-->
+      <section class="hero">
+        <div class="row">
+          <div class="hero-left col-6">
+            <h1>Hi there&#33; yes, you&#33;</h1>
+            <p>I am talking to you. Welcome to my website &#58;&#41;</p>
             <div class="name">
-                <p>I am <strong>"Mohamed Hany"</strong></p>
+              <p>I am <strong>"Mohamed Hany"</strong></p>
             </div>
+          </div>
+          <div class="hero-right col-6">
+            <img
+              src="images/three_monkeys.jpg"
+              alt="Three monkeys. I can't hear, I can't see, I can't talk"
+              class="img-fluid"
+            />
+          </div>
         </div>
-        <div class="hero-right">
-            <img src="https://via.placeholder.com/500" alt="image"/>
-        </div>
-    </section><!--End hero section-->
+      </section>
+      <!--End hero section-->
 
-    <section class="facts"><!--Start facts section-->
-        <header><span id="number">3&#35;</span>Thing you should to kow about me</header>
-        <div class="facts-subsection">
-            <div class="facts-subsection-left">
-                A coffee lover
-            </div>
-            <div class="facts-subsection-rigth">
-                <img src="https://via.placeholder.com/500" alt="image"/>
-            </div>
+      <section class="facts">
+        <!--Start facts section-->
+        <header class="row">
+          <p>
+            <span id="number">3&#35; </span>Thing you should to kow about me
+          </p>
+        </header>
+        <div class="facts-subsection row gx-0">
+          <div class="facts-subsection-left col-6">A coffee lover</div>
+          <div class="facts-subsection-rigth col-6">
+            <img
+              src="images/a_cup_of_coffee.jpg"
+              alt="A cup of coffe on the table"
+              class="img-fluid"
+            />
+          </div>
         </div>
-        <div class="facts-subsection">
-            <div class="facts-subsection-left">
-                A software engineer
-            </div>
-            <div class="facts-subsection-rigth">
-                <img src="https://via.placeholder.com/500" alt="image"/>
-            </div>
+        <div class="facts-subsection row gx-0">
+          <div class="facts-subsection-left col-6">A software engineer</div>
+          <div class="facts-subsection-rigth col-6">
+            <img
+              src="images/laptop.jpg"
+              alt="A laptop with code on the screen on the table"
+              class="img-fluid"
+            />
+          </div>
         </div>
-        <div class="facts-subsection">
-            <div class="facts-subsection-left">
-                A knowledge seeker
-            </div>
-            <div class="facts-subsection-rigth">
-                <img src="https://via.placeholder.com/500" alt="image"/>
-            </div>
+        <div class="facts-subsection row gx-0">
+          <div class="facts-subsection-left col-6">A knowledge seeker</div>
+          <div class="facts-subsection-rigth col-6">
+            <img
+              src="images/reader.jpg"
+              alt="Someone is reading in the field"
+              class="img-fluid"
+            />
+          </div>
         </div>
-    </section><!--End facts section-->
+      </section>
+      <!--End facts section-->
 
-    <section><!--Start favorite-colors section-->
+      <section>
+        <!--Start favorite-colors section-->
         <header>My favorite colors</header>
         <div class="favorite-colors-subsection">
-            <div class="favorite-colors-subsection-left">
-                <div class="color green">#7CAD5C</div>
-                <div class="color orange">#F39C12</div>
-            </div>
-            <div class="favorite-colors-subsection-right">
-                <div class="color brown">#523223</div>
-                <div class="color blue">#3498DB</div>
-            </div>
+          <div class="favorite-colors-subsection-left">
+            <div class="color green">#7CAD5C</div>
+            <div class="color orange">#F39C12</div>
+          </div>
+          <div class="favorite-colors-subsection-right">
+            <div class="color brown">#523223</div>
+            <div class="color blue">#3498DB</div>
+          </div>
         </div>
-    </section><!--End favorite-colors section-->
-    
-    <section class="still-curious"><!--Start still-curious section-->
+      </section>
+      <!--End favorite-colors section-->
+
+      <section class="still-curious">
+        <!--Start still-curious section-->
         <header>Are you still curious</header>
         <p>Okay, let's dive down more into my personality my friend</p>
-        <p>In my free time, I do lots of things: <strong>watching movies</strong>, <strong>TV shows</strong>, and even <strong>anime</strong>, I also play <strong>video games</strong>. Why&#63;</p>
+        <p>
+          In my free time, I do lots of things:
+          <strong>watching movies</strong>, <strong>TV shows</strong>, and even
+          <strong>anime</strong>, I also play <strong>video games</strong>.
+          Why&#63;
+        </p>
         <div class="still-curious-subsection">
-            <div class="still-curious-subsection-left">
-                <img src="https://via.placeholder.com/500" alt="image"/>
-            </div>
-            <div class="still-curious-subsection-right">
-                <span>Movies</span> are great. The visual effects, mysteries, actions, heroes, and ancient civilization. All these things do not exist in real life. So, why I don't love them.
-            </div>
+          <div class="still-curious-subsection-left">
+            <img src="https://via.placeholder.com/500" alt="image" />
+          </div>
+          <div class="still-curious-subsection-right">
+            <span>Movies</span> are great. The visual effects, mysteries,
+            actions, heroes, and ancient civilization. All these things do not
+            exist in real life. So, why I don't love them.
+          </div>
         </div>
         <div class="still-curious-subsection">
-            <div class="still-curious-subsection-left">
-                <span>TV shows</span> are great, too. They are the long version of movies, with a big chance to understand more the content, like characters especially the heroes and main villains, character building, eras, ideas..etc.
-            </div>
-            <div class="still-curious-subsection-right">
-                <img src="https://via.placeholder.com/500" alt="image"/>
-            </div>
+          <div class="still-curious-subsection-left">
+            <span>TV shows</span> are great, too. They are the long version of
+            movies, with a big chance to understand more the content, like
+            characters especially the heroes and main villains, character
+            building, eras, ideas..etc.
+          </div>
+          <div class="still-curious-subsection-right">
+            <img src="https://via.placeholder.com/500" alt="image" />
+          </div>
         </div>
         <div class="still-curious-subsection">
-            <div class="still-curious-subsection-left">
-                <img src="https://via.placeholder.com/500" alt="image"/>
-            </div>
-            <div class="still-curious-subsection-right">
-                <span>Anime</span> is Japanese art. Originally the anime is comics, but in Japan is called manga. Usually, manga drawing in black and white. If the manga become popular, a Japanese studio take it and converts it into an anime which is the animated version of the manga with colors, animation, voices, soundtracks.
-            </div>
+          <div class="still-curious-subsection-left">
+            <img src="https://via.placeholder.com/500" alt="image" />
+          </div>
+          <div class="still-curious-subsection-right">
+            <span>Anime</span> is Japanese art. Originally the anime is comics,
+            but in Japan is called manga. Usually, manga drawing in black and
+            white. If the manga become popular, a Japanese studio take it and
+            converts it into an anime which is the animated version of the manga
+            with colors, animation, voices, soundtracks.
+          </div>
         </div>
         <div class="still-curious-subsection">
-            <div class="still-curious-subsection-left">
-                <span>Video games</span> are the interactive version of movies and tv shows. You are the one that choosing the hero, Determining the path of the story, choosing the good or the bad side. In nutshell, you are the controller.
-            </div>
-            <div class="still-curious-subsection-right">
-                <img src="https://via.placeholder.com/500" alt="image"/>
-            </div>
+          <div class="still-curious-subsection-left">
+            <span>Video games</span> are the interactive version of movies and
+            tv shows. You are the one that choosing the hero, Determining the
+            path of the story, choosing the good or the bad side. In nutshell,
+            you are the controller.
+          </div>
+          <div class="still-curious-subsection-right">
+            <img src="https://via.placeholder.com/500" alt="image" />
+          </div>
         </div>
-    </section><!--Start still-curious section-->
-    
-    <section class="know-more"><!--Start know-more section-->
-        <p>If you want to know more about me, then you will find more information on the <strong>Hobbies</strong> page</p>
-        <button class="styled-btn">Know more</button>
-    </section><!--End know-more section-->
+      </section>
+      <!--Start still-curious section-->
 
-    <footer><!--Start footer-->
+      <section class="know-more">
+        <!--Start know-more section-->
+        <p>
+          If you want to know more about me, then you will find more information
+          on the <strong>Hobbies</strong> page
+        </p>
+        <button class="styled-btn">Know more</button>
+      </section>
+      <!--End know-more section-->
+
+      <footer>
+        <!--Start footer-->
         <div class="footer-left">
-            <p>Designed and coded by <strong>Mohamed Hany</strong></p>
+          <p>Designed and coded by <strong>Mohamed Hany</strong></p>
         </div>
         <div class="footer-right">
-            CS50 <div id="current-year">2021</div>
+          CS50
+          <div id="current-year">2021</div>
         </div>
-    </footer><!--Start footer-->
-    
+      </footer>
+      <!--Start footer-->
+    </div>
     <script src="js/vendors/popper.js"></script>
     <script src="js/vendors/bootstrap.js"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

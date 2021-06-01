@@ -1,56 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This my gallery with my best images on the internet">
-    <meta name="keywords" content="gallery, images, personal">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This my gallery with my best images on the internet"
+    />
+    <meta name="keywords" content="gallery, images, personal" />
     <title>Gallery</title>
-    <link rel="stylesheet" href="css/vendors/bootstrap.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-</head>
-<body>
-    <header class="main"><!--Start header-->
-        <div class="logo">
-            <img src="images/logo.png" alt="Website logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <link rel="stylesheet" href="css/vendors/bootstrap.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!--Start header-->
+      <header class="main">
+        <div class="row">
+          <div class="logo col-2">
+            <a href="index.html"
+              ><img
+                src="images/logo.png"
+                alt="Website logo"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <nav class="col-10">
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="hobbies.html">Hobbies</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-    </header><!--End header-->
+          </nav>
+        </div>
+      </header>
+      <!--End header-->
 
-    <header class="subheader"><!--Start sub header-->
+      <header class="subheader">
+        <!--Start sub header-->
         <h1>Lorem ipsum dolor sit, amet consectetur adipisicing</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo neque quibusdam nostrum.</p>
-    </header><!--End sub header-->
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo neque
+          quibusdam nostrum.
+        </p>
+      </header>
+      <!--End sub header-->
 
-    <div class="warning"> <!--Start warning-->
+      <div class="warning">
+        <!--Start warning-->
         <strong>warning</strong>
         <p>It may contain a spoiler</p>
-    </div><!--End warning-->
+      </div>
+      <!--End warning-->
 
-    <section class="slider"><!--Start image slider-->
-        <img src="https://via.placeholder.com/500" alt="image"/>
-    </section><!--End image slider-->
+      <section class="slider">
+        <!--Start image slider-->
+        <img src="https://via.placeholder.com/500" alt="image" />
+      </section>
+      <!--End image slider-->
 
-    <footer><!--Start footer-->
+      <footer>
+        <!--Start footer-->
         <div class="footer-left">
-            <p>Designed and coded by <strong>Mohamed Hany</strong></p>
+          <p>Designed and coded by <strong>Mohamed Hany</strong></p>
         </div>
         <div class="footer-right">
-            CS50 <div id="current-year">2021</div>
+          CS50
+          <div id="current-year">2021</div>
         </div>
-    </footer><!--Start footer-->
-
+      </footer>
+      <!--Start footer-->
+    </div>
     <script src="js/vendors/popper.js"></script>
     <script src="js/vendors/bootstrap.js"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

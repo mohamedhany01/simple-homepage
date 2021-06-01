@@ -1,0 +1,159 @@
+body {
+  background-color: #dcdbc9;
+  font-family: "Roboto";
+}
+
+/* Color scheme */
+/* 
+    #7cad5c -> green
+    #523223 -> brown
+    #DCDBC9 -> gray
+    
+*/
+
+/* Overwrite bootstrap classes */
+.container-fluid {
+  width: 90%;
+}
+
+/* header and nav styles */
+header.main .row {
+  justify-content: space-between;
+  align-items: center;
+  margin: 5% 0;
+}
+
+header .logo {
+  width: 100px;
+  display: flex;
+  justify-content: start;
+  filter: drop-shadow(1px 2px 5px #575252);
+}
+
+/* header .logo img {
+  filter: drop-shadow(30px, 10px 4px, #000000);
+} */
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0%;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: #7cad5c;
+}
+
+header nav ul li a:hover {
+  color: #74cf37;
+}
+
+/* hero section styles */
+section.hero {
+  background-color: #7cad5c;
+}
+
+section.hero .hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.hero .hero-left h1 {
+  color: #523223;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0%;
+  font-size: 50px;
+}
+
+section.hero .hero-left > p {
+  color: #523223;
+  font-weight: bold;
+  margin: 15px 0px 35px 0px;
+  font-size: 15px;
+}
+
+section.hero .hero-left .name {
+  background-color: #523223;
+  text-transform: capitalize;
+}
+
+section.hero .hero-left .name p {
+  color: #7cad5c;
+  font-weight: bold;
+  padding: 20px;
+  margin: 0%;
+  font-size: 20px;
+}
+
+section.hero .hero-right {
+  display: flex;
+  justify-content: left;
+}
+
+section.hero .hero-right img {
+  width: 100%;
+}
+
+/* facts section styles */
+.facts header.row {
+  margin: 3% 0%;
+}
+
+.facts header p {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: #523223;
+  font-size: 30px;
+  text-transform: capitalize;
+  margin: 0%;
+  padding: 0%;
+}
+
+.facts header p #number {
+  font-size: 50px;
+  font-weight: bold;
+  color: #7cad5c;
+  margin-left: 5px;
+}
+
+/* facts subsection styles */
+.facts .facts-subsection.row {
+  justify-content: center;
+  align-content: center;
+  margin: 2% 0%;
+  padding: 0%;
+}
+
+.facts .facts-subsection {
+  background-color: #7cad5c;
+}
+
+.facts .facts-subsection .facts-subsection-left {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: #523223;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.facts .facts-subsection .facts-subsection-right {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.facts .facts-subsection .facts-subsection-right img {
+  width: 100%;
+}
