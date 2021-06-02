@@ -157,3 +157,30 @@ section.hero .hero-right img {
 .facts .facts-subsection .facts-subsection-right img {
   width: 100%;
 }
+
+/*  favorite-colors section styles */
+.favorite-colors header {
+  display: flex;
+  justify-content: center;
+}
+
+.favorite-colors header ~ div {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+
+.favorite-colors header ~ div > div {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+}
+
+.favorite-colors header ~ div > div:first- {
+  margin-bottom: 20px;
+}
+
+.favorite-colors .color {
+  background-color: #ffffff;
+}
