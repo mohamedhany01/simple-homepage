@@ -312,40 +312,209 @@ section.hero .hero-right img {
   margin: 5% 0%;
 }
 
-/* footer styles */
-footer.row {
-  background-color: #7cad5c;
-  color: #523223;
+/*
+==============================
+Hobbies page
+==============================
+*/
+
+/*Hobbies style*/
+
+.hobbies-header,
+.contact-header,
+.gallery-header {
   justify-content: center;
   align-items: center;
-  padding: 1% 0%;
+  text-align: center;
+  margin: 10% 0%;
 }
 
-footer .footer-left {
-  display: flex;
-  justify-content: left;
-  align-content: center;
-  align-items: center;
+.hobbies-header h1,
+.contact-header h1,
+.gallery-header h1 {
+  color: #523223;
+  font-weight: bold;
+  margin: 0px;
 }
 
-footer .footer-left p {
-  margin: 0%;
+.hobbies-header p,
+.contact-header p,
+.gallery-header p {
+  color: #7cad5c;
+  font-weight: normal;
+  font-size: 1.4rem;
+  margin: 2% 0%;
+}
+
+.hobbies {
+  background-color: #7cad5c;
+  margin: 7% 0%;
+}
+
+.hobbies .frame {
   display: flex;
-  flex-flow: column;
-  align-content: center;
+  justify-content: center;
   align-items: center;
+  width: 70%;
+  margin: auto;
+  position: relative;
+}
+
+.hobbies .frame .img-container {
+  background-color: #523223;
+  padding: 10%;
+}
+
+.hobbies .frame .text-container {
+  position: absolute;
+  left: 30%;
+  bottom: 2%;
+  color: #7cad5c;
+  margin: 2% 0%;
   font-weight: bold;
 }
 
-footer .footer-left p strong {
-  font-weight: lighter;
+.hobbies .description {
+  text-align: center;
+  margin: 4% 0%;
+  color: #523223;
+  line-height: 1.7rem;
+  padding: 0% 20%;
 }
 
-footer .footer-right {
-  display: flex;
-  justify-content: right;
-  align-items: center;
+/*
+==============================
+Contact page
+==============================
+*/
+
+/* contact style*/
+.form-container {
+  background-color: #dcdbc9;
+  filter: drop-shadow(1px 2px 5px #575252);
+  padding: 5% 7%;
+  border-radius: 10px;
+  margin: 0% auto 10%;
+  width: 75%;
 }
-footer .footer-right #current-year {
-  margin-left: 1%;
+
+.form-container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-container form > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 5% 0%;
+}
+
+.form-container form label {
+  color: #523223;
+  font-weight: bold;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 70%;
+  margin-top: 2%;
+  border-color: #7cad5c;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.form-container textarea {
+  resize: none;
+}
+
+.form-container .btn-row {
+  width: 50%;
+}
+
+.form-container .btn-row input {
+  padding: 3%;
+}
+
+/*
+==============================
+Gallery page
+==============================
+*/
+
+.warning {
+  text-align: center;
+}
+
+.warning strong {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: red;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.warning p {
+  color: #7cad5c;
+  font-size: 1.4rem;
+  margin: 2% 0%;
+}
+
+.slider {
+  margin: 10% 0%;
+}
+
+/*
+==============================
+Footer
+==============================
+*/
+
+/* footer styles */
+
+footer {
+  background-color: #7cad5c;
+  padding: 1% 0%;
+}
+
+footer p {
+  margin: 0px;
+}
+
+footer .row {
+  justify-content: center;
+  align-items: center;
+  color: #523223;
+}
+
+footer .row .footer-left {
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+footer .row .footer-left div:first-child {
+  font-size: 1.2rem;
+}
+
+footer .row .footer-left div:not(:first-child) {
+  margin: 0% 8%;
+  font-weight: 100;
+}
+
+footer .row .footer-right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+footer .row .footer-right #current-year {
+  font-weight: 100;
+  font-size: 1rem;
 }

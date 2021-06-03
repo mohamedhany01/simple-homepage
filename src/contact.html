@@ -16,9 +16,9 @@
   </head>
 
   <body>
-    <div class="container-fluid">
-      <!--Start header-->
-      <header class="main">
+    <!--Start header-->
+    <header class="main">
+      <div class="container-fluid">
         <div class="row">
           <div class="logo col-2">
             <a href="index.html"
@@ -38,39 +38,72 @@
             </ul>
           </nav>
         </div>
+      </div>
+    </header>
+    <!--End header-->
+
+    <div class="container-fluid">
+      <!--Start contact header-->
+      <header class="contact-header row gx-0 col-12">
+        <h1>&#34;Lorem ipsum dolor sit, amet consectetur adipisicing&#34;</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo neque
+          quibusdam nostrum.
+        </p>
       </header>
-      <!--End header-->
-
-      <header class="subheader">
-        <!--Start sub header-->
-        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing</h1>
-      </header>
-      <!--End sub header-->
-
-      <section class="from">
-        <form action="/" method="get">
-          <label for="name">Name:</label>
-          <input type="text" name="name" id="name" />
-          <label for="email">E-mail</label>
-          <input type="email" name="email" id="email" />
-          <label for="message">Message</label>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
-          <input type="submit" value="Send" />
-        </form>
-      </section>
-
-      <!--Start footer-->
-      <footer class="row">
-        <div class="footer-left col-6">
-          <p>Designed and coded by <strong>Mohamed Hany</strong></p>
-        </div>
-        <div class="footer-right col-6">
-          CS50
-          <div id="current-year">2021</div>
-        </div>
-      </footer>
-      <!--Start footer-->
+      <!--End contact header-->
     </div>
+
+    <!--Start from-->
+    <div class="container-fluid">
+      <div class="row">
+        <section class="form-container">
+          <form action="/" method="get" onclick="return false;">
+            <div class="name-row">
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div class="email-row">
+              <label for="email">E-mail: </label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="message-row">
+              <label for="message">Message:</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <div class="btn-row">
+              <input class="btn-styled" type="submit" value="Send" />
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+    <!--End from-->
+
+    <!--Start footer-->
+    <footer>
+      <div class="container-fluid">
+        <div class="row gx-0">
+          <div class="footer-left col-6">
+            <div>Designed and coded by</div>
+            <div>
+              <span><strong>Mohamed Hany</strong></span>
+            </div>
+          </div>
+          <div class="footer-right col-6">
+            <div>CS50</div>
+            <div><span id="current-year">2021</span></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--End footer-->
+
     <script src="js/vendors/popper.js"></script>
     <script src="js/vendors/bootstrap.js"></script>
     <script src="js/main.js"></script>
