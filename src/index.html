@@ -12,205 +12,306 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/vendors/bootstrap.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
   </head>
 
   <body>
-    <div class="container-fluid">
-      <!--Start header-->
-      <header class="main">
-        <div class="row">
-          <div class="logo col-2">
-            <a href="index.html"
-              ><img
-                src="images/logo.png"
-                alt="Website logo"
-                class="img-fluid"
-              />
-            </a>
-          </div>
-          <nav class="col-10">
-            <ul class="list-unstyled">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="hobbies.html">Hobbies</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="contact.html">Contact</a></li>
+    <!--Start header-->
+    <header class="upper">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img src="images/logo.png" alt="Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="hobbies.html"
+                  >Hobbies</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="gallery.html"
+                  >Gallery</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="contact.html"
+                  >Contact</a
+                >
+              </li>
             </ul>
-          </nav>
+          </div>
         </div>
-      </header>
-      <!--End header-->
+      </nav>
+    </header>
+    <!--End header-->
 
-      <!--Start hero section-->
-      <section class="hero">
+    <!-- Start hero section-->
+    <section class="hero section-my">
+      <div class="container-fluid">
         <div class="row">
-          <div class="hero-left col-6">
+          <div class="hero-left py-5 text-center gx-0 d-block col-lg-6 col-12">
             <h1>Hi there&#33; yes, you&#33;</h1>
-            <p>I am talking to you. Welcome to my website &#58;&#41;</p>
+            <p class="subheading">
+              I am talking to you. Welcome to my website &#58;&#41;
+            </p>
             <div class="name">
               <p>I am <strong>"Mohamed Hany"</strong></p>
+              <span class="bullet top left"></span>
+              <span class="bullet top right"></span>
+              <span class="bullet bottom left"></span>
+              <span class="bullet bottom right"></span>
             </div>
           </div>
-          <div class="hero-right col-6">
+          <div
+            class="
+              hero-right
+              gx-0
+              col-lg-6
+              d-none d-lg-block d-xl-block d-xxl-block
+            "
+          >
             <img
               src="images/img-pages/three_monkeys.jpg"
-              alt="Three monkeys. I can't hear, I can't see, I can't talk"
+              alt="The three monkeys. I can't hear, I can't see, I can't talk"
               class="img-fluid"
             />
           </div>
         </div>
-      </section>
-      <!--End hero section-->
+      </div>
+    </section>
+    <!--End hero section-->
 
-      <!--Start facts section-->
-      <section class="facts">
+    <!--Start facts section-->
+    <section class="facts section-my">
+      <div class="container-fluid">
         <header class="row">
-          <p>
-            <span id="number">3&#35; </span>Thing you should to kow about me
-          </p>
+          <div class="number g-0 col-12">3#</div>
+          <div class="text g-0 col-12">Things you should to kow about me</div>
         </header>
-        <div class="facts-subsection row gx-0">
-          <div class="facts-subsection-left col-6">A coffee lover</div>
-          <div class="facts-subsection-rigth col-6">
-            <img
-              src="images/img-pages/a_cup_of_coffee.jpg"
-              alt="A cup of coffe on the table"
-              class="img-fluid"
-            />
+      </div>
+
+      <div class="facts-subsection">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="facts-subsection-left col-md-6 col-12 gx-0">
+              A coffee lover
+            </div>
+            <div class="facts-subsection-rigth col-md-6 col-12 gx-0">
+              <img
+                src="images/img-pages/a_cup_of_coffee.jpg"
+                alt="A cup of coffee on the table"
+                class="img-fluid"
+              />
+            </div>
           </div>
         </div>
-        <div class="facts-subsection row gx-0">
-          <div class="facts-subsection-left col-6">A software engineer</div>
-          <div class="facts-subsection-rigth col-6">
-            <img
-              src="images/img-pages/laptop.jpg"
-              alt="A laptop with code on the screen on the table"
-              class="img-fluid"
-            />
+      </div>
+
+      <div class="facts-subsection">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="facts-subsection-left col-md-6 col-12 gx-0">
+              A software engineer
+            </div>
+            <div class="facts-subsection-rigth col-md-6 col-12 gx-0">
+              <img
+                src="images/img-pages/laptop.jpg"
+                alt="A laptop with code on the screen on the table"
+                class="img-fluid"
+              />
+            </div>
           </div>
         </div>
-        <div class="facts-subsection row gx-0">
-          <div class="facts-subsection-left col-6">A knowledge seeker</div>
-          <div class="facts-subsection-rigth col-6">
-            <img
-              src="images/img-pages/reader.jpg"
-              alt="Someone is reading in the field"
-              class="img-fluid"
-            />
-          </div>
-        </div>
-      </section>
+      </div>
       <!--End facts section-->
 
-      <!--Start favorite-colors section-->
-      <section class="favorite-colors row">
-        <header>
-          <p>My favorite colors</p>
-        </header>
-        <div class="favorite-colors-subsection-left">
-          <div class="color green">#7CAD5C</div>
-          <div class="color orange">#F39C12</div>
+      <!--Start facts section-->
+      <div class="facts-subsection">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="facts-subsection-left col-md-6 col-12 gx-0">
+              A knowledge seeker
+            </div>
+            <div class="facts-subsection-rigth col-md-6 col-12 gx-0">
+              <img
+                src="images/img-pages/reader.jpg"
+                alt="Someone is reading in the field"
+                class="img-fluid"
+              />
+            </div>
+          </div>
         </div>
-        <div class="favorite-colors-subsection-right">
-          <div class="color brown">#523223</div>
-          <div class="color blue">#3498DB</div>
-        </div>
-      </section>
-      <!--End favorite-colors section-->
+      </div>
+    </section>
+    <!--End facts section-->
 
-      <!--Start still-curious section-->
-      <section class="still-curious">
-        <header>
-          <p>Are you still curious</p>
-          <p>Okay, let's dive down more into my personality my friend</p>
-          <p>
-            In my free time, I do lots of things
-            <strong>watching movies</strong>, <strong>TV shows</strong>, and
-            even <strong>anime</strong>, I also play
-            <strong>video games</strong>. Why&#63;
+    <!--Start favorite-colors section-->
+    <section class="favorite-colors section-my">
+      <div class="continer-fluid">
+        <div class="row gx-0">
+          <header class="col-12 text-center">
+            <p>My favorite colors</p>
+          </header>
+        </div>
+        <div class="row gx-0 colors">
+            <div class="favorite-colors-subsection col-md-4 col-md-offset-2">
+              <div class="color green">#7CAD5C</div>
+              <div class="color orange">#F39C12</div>
+            </div>
+            <div class="favorite-colors-subsection col-md-4 col-md-offset-2">
+              <div class="color brown">#523223</div>
+              <div class="color blue">#3498DB</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End favorite-colors section-->
+
+    <!--Start still-curious section-->
+    <section class="still-curious section-my">
+      <div class="container-fluid">
+        <header class="row text-center">
+          <div>Are you still curious</div>
+          <p>Okay, let's dive down more into my personality my friend. In my free time, I do lots of things
+            <strong>watching movies</strong>, <strong>TV shows</strong>, and even
+            <strong>anime</strong>, I also play <strong>video games</strong>.
+            Why&#63;
           </p>
         </header>
-        <div class="still-curious-subsection row">
-          <div class="still-curious-subsection-left col-6 gx-0">
-            <img
-              src="images/img-pages/old_movies_camera.jpg"
-              alt="old movies camera"
-              class="img-fluid"
-            />
-          </div>
-          <div class="still-curious-subsection-right col-6 gx-0">
-            <p>
-              <span>Movies</span> are great. The visual effects, mysteries,
-              actions, heroes, and ancient civilization. All these things do not
-              exist in real life. So, why I don't love them.
-            </p>
+      </div>
+      <div class="still-curious-subsection">
+        <div class="container-fluid px-0">
+          <div class="row change-flip g-0">
+            <div class="still-curious-subsection-left col-md-6 col-12 g-0">
+              <img
+                src="images/img-pages/old_movies_camera.jpg"
+                alt="old movies camera"
+                class="img-fluid"
+              />
+            </div>
+            <div class="still-curious-subsection-right col-md-6 col-12 g-0">
+              <p>
+                <span>Movies</span> are great. The visual effects, mysteries,
+                actions, heroes, and ancient civilization. All these things do not
+                exist in real life. So, why I don't love them.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="still-curious-subsection row">
-          <div class="still-curious-subsection-left col-6 gx-0">
-            <p>
-              <span>TV shows</span> are great, too. They are the long version of
-              movies, with a big chance to understand more the content, like
-              characters especially the heroes and main villains, character
-              building, eras, ideas..etc.
-            </p>
-          </div>
-          <div class="still-curious-subsection-right col-6 gx-0">
-            <img
+      </div>
+      <div class="still-curious-subsection">
+        <div class="container-fluid px-0">
+          <div class="row g-0">
+            <div class="still-curious-subsection-left col-md-6 col-12 g-0">
+              <img
               src="images/img-pages/tv-showes_on_the_tv.jpg"
               alt="A TV on a table with tv-shows"
               class="img-fluid"
             />
+        
+            </div>
+            <div class="still-curious-subsection-right col-md-6 col-12 g-0">
+              <p>
+                <span>TV shows</span> are great, too. They are the long version of
+                movies, with a big chance to understand more the content, like
+                characters especially the heroes and main villains, character
+                building, eras, ideas..etc.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="still-curious-subsection row">
-          <div class="still-curious-subsection-left col-6 gx-0">
-            <img
-              src="images/img-pages/anime.jpg"
-              alt="Some anime series"
-              class="img-fluid"
-            />
-          </div>
-          <div class="still-curious-subsection-right col-6 gx-0">
-            <p>
-              <span>Anime</span> is Japanese art. Originally the anime is
-              comics, but in Japan is called manga. Usually, manga drawing in
-              black and white. If the manga become popular, a Japanese studio
-              take it and converts it into an anime which is the animated
-              version of the manga with colors, animation, voices, soundtracks.
-            </p>
-          </div>
-        </div>
-        <div class="still-curious-subsection row">
-          <div class="still-curious-subsection-left col-6 gx-0">
-            <p>
-              <span>Video games</span> are the interactive version of movies and
-              tv shows. You are the one that choosing the hero, Determining the
-              path of the story, choosing the good or the bad side. In nutshell,
-              you are the controller.
-            </p>
-          </div>
-          <div class="still-curious-subsection-right col-6 gx-0">
-            <img
-              src="images/img-pages/video_game_sonic.jpg"
-              alt="Sonic game on an arcade cartridge"
-              class="img-fluid"
-            />
+      </div>
+      <div class="still-curious-subsection">
+        <div class="container-fluid px-0">
+          <div class="row change-flip g-0">
+            <div class="still-curious-subsection-left col-md-6 col-12 g-0">
+              <img
+                src="images/img-pages/anime.jpg"
+                alt="Some anime series"
+                class="img-fluid"
+              />
+            </div>
+            <div class="still-curious-subsection-right col-md-6 col-12 g-0">
+              <p>
+                <span>Anime</span> is Japanese art. Originally the anime is comics,
+                but in Japan is called manga. Usually, manga drawing in black and
+                white. If the manga become popular, a Japanese studio take it and
+                converts it into an anime which is the animated version of the manga
+                with colors, animation, voices, soundtracks.
+              </p>
+            </div>
           </div>
         </div>
-      </section>
-      <!--Start still-curious section-->
+      </div>
+      <div class="still-curious-subsection">
+        <div class="container-fluid px-0">
+          <div class="row g-0">
+            <div class="still-curious-subsection-left col-md-6 col-12 g-0">
+              <img
+                src="images/img-pages/video_game_sonic.jpg"
+                alt="Sonic game on an arcade cartridge"
+                class="img-fluid"
+              />
+            </div>
+            <div class="still-curious-subsection-right col-md-6 col-12 g-0">
+              <p>
+                <span>Video games</span> are the interactive version of movies and
+                tv shows. You are the one that choosing the hero, Determining the
+                path of the story, choosing the good or the bad side. In nutshell,
+                you are the controller.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Start still-curious section-->
 
-      <section class="know-more row">
-        <!--Start know-more section-->
-        <p>
-          If you want to know more about me, then you will find more information
-          on the <strong>Hobbies</strong> page
-        </p>
-        <a href="hobbies.html" class="btn-styled" role="button">Know more</a>
-      </section>
-      <!--End know-more section-->
-    </div>
+    <!--Start know-more section-->
+    <section class="know-more section-my">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p>
+              If you want to know more about me, then you will find more information
+              on the <strong>Hobbies</strong> page
+            </p>
+          </div>
+          <div class="btn-hobbies col-12 text-center">
+            <a href="hobbies.html" class="btn-styled" role="button">Know more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End know-more section-->
 
     <!--Start footer-->
     <footer>
@@ -229,7 +330,7 @@
         </div>
       </div>
     </footer>
-    <!--Start footer-->
+    <!--Start footer -->
 
     <script src="js/vendors/popper.js"></script>
     <script src="js/vendors/bootstrap.js"></script>

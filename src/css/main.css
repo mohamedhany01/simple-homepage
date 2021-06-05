@@ -1,8 +1,3 @@
-body {
-  background-color: #dcdbc9;
-  font-family: "Roboto";
-}
-
 /* Color scheme */
 /* 
     #7cad5c -> green
@@ -11,10 +6,16 @@ body {
     
 */
 
-/* Overwrite bootstrap classes */
-.container-fluid {
-  width: 90%;
+body {
+  background-color: #dcdbc9;
+  font-family: "Roboto";
 }
+
+/* 
+  ======================================
+  Start Customized components
+  ====================================== 
+*/
 
 .btn-styled {
   background-color: #7cad5c;
@@ -37,186 +38,214 @@ body {
   color: #523223;
 }
 
-/* header and nav styles */
-header.main .row {
-  justify-content: space-between;
-  align-items: center;
-  margin: 5% 0;
+.section-my {
+  margin: 5% 0%;
+}
+/*End Customized components*/
+
+/*
+  ======================================
+  Start Header and Nav styles 
+  ======================================
+*/
+header.upper {
+  background-color: #dcdbc9;
 }
 
-header .logo {
-  width: 100px;
-  display: flex;
-  justify-content: start;
+header .navbar .navbar-brand img {
   filter: drop-shadow(1px 2px 5px #575252);
 }
 
-/* header .logo img {
-  filter: drop-shadow(30px, 10px 4px, #000000);
-} */
-
-header nav ul {
-  display: flex;
-  justify-content: space-between;
-  margin: 0%;
+/* Start Overwrite bootstrap classes */
+header .navbar-nav {
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-header nav ul li a {
-  text-decoration: none;
-  font-size: 25px;
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+  font-size: 1.5rem;
   font-weight: bold;
   color: #7cad5c;
 }
-
-header nav ul li a:hover {
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .nav-link.active:hover {
   color: #74cf37;
 }
 
-/* hero section styles */
-section.hero {
+.navbar-light .navbar-toggler {
+  background-color: #7cad5c;
+  height: 75px;
+  width: 75px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.navbar-light .navbar-toggler:hover {
+  background-color: #74cf37;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* End overwrite bootstrap classes */
+
+/* End Header and Nav styles */
+
+/*
+  ======================================
+  Start Hero section styles
+  ======================================
+*/
+
+.hero {
   background-color: #7cad5c;
 }
 
-section.hero .hero-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.hero .row {
   justify-content: center;
+  align-items: center;
 }
 
-section.hero .hero-left h1 {
+.hero .hero-left h1 {
   color: #523223;
   text-transform: uppercase;
   font-weight: bold;
   margin: 0%;
-  font-size: 50px;
+  font-size: 3rem;
 }
 
-section.hero .hero-left > p {
+.hero .hero-left .subheading {
   color: #523223;
   font-weight: bold;
-  margin: 15px 0px 35px 0px;
-  font-size: 15px;
+  margin: 4% 0%;
+  font-size: 1rem;
+  text-transform: capitalize;
 }
 
-section.hero .hero-left .name {
+.hero .hero-left .name {
   background-color: #523223;
   text-transform: capitalize;
+  position: relative;
+  width: 50%;
+  padding: 3%;
+  margin: 0% auto;
+  border-radius: 0.7rem;
 }
 
-section.hero .hero-left .name p {
+.hero .hero-left .name p {
   color: #7cad5c;
   font-weight: bold;
-  padding: 20px;
+  padding: 3%;
   margin: 0%;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
-section.hero .hero-right {
-  display: flex;
-  justify-content: left;
+.hero .hero-left .name .bullet {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #7cad5c;
+  bottom: 0%;
 }
 
-section.hero .hero-right img {
-  width: 100%;
+.hero .hero-left .name .bullet.top {
+  top: 0%;
 }
 
-/* facts section styles */
-.facts header.row {
-  margin: 3% 0%;
+.hero .hero-left .name .bullet.top.left {
+  top: 0%;
+  left: -1%;
 }
 
-.facts header p {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+.hero .hero-left .name .bullet.top.right {
+  top: 0%;
+  right: -1%;
+}
+
+.hero .hero-left .name .bullet.bottom {
+  bottom: 0%;
+}
+
+.hero .hero-left .name .bullet.bottom.left {
+  bottom: 0%;
+  left: -1%;
+}
+
+.hero .hero-left .name .bullet.bottom.right {
+  bottom: 0%;
+  right: -1%;
+}
+
+/*
+  ======================================
+  Start Facts section styles
+  ======================================
+*/
+
+.facts header {
   align-items: center;
+  justify-content: center;
+  text-align: center;
   color: #523223;
-  font-size: 30px;
+  font-size: 2rem;
   text-transform: capitalize;
   margin: 0%;
-  padding: 0%;
 }
 
-.facts header p #number {
-  font-size: 50px;
+.facts header .number {
+  font-size: 3rem;
   font-weight: bold;
   color: #7cad5c;
-  margin-left: 5px;
-}
-
-/* facts subsection styles */
-.facts .facts-subsection.row {
-  justify-content: center;
-  align-content: center;
-  margin: 2% 0%;
-  padding: 0%;
 }
 
 .facts .facts-subsection {
   background-color: #7cad5c;
+  margin: 5% 0%;
 }
 
 .facts .facts-subsection .facts-subsection-left {
   display: flex;
   justify-content: center;
-  align-content: center;
   align-items: center;
   color: #523223;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: bold;
   text-transform: capitalize;
+  text-align: center;
+  padding: 10% 0%;
 }
 
-.facts .facts-subsection .facts-subsection-right {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-}
-
-.facts .facts-subsection .facts-subsection-right img {
-  width: 100%;
-}
-
-/*  favorite-colors section styles */
-.favorite-colors.row {
-  margin: 10% 0%;
-}
-
-.favorite-colors header {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2%;
-}
+/*
+  ======================================
+  Start Favorite-colors section styles
+  ======================================
+*/
 
 .favorite-colors header p {
   text-transform: capitalize;
   color: #523223;
-  font-size: 30px;
+  font-size: 2.5rem;
   font-weight: bold;
-}
-
-.favorite-colors header ~ div {
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-around;
-}
-
-.favorite-colors header ~ div > div {
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  padding: 3%;
-}
-
-.favorite-colors header + div > div {
-  margin-bottom: 5%;
 }
 
 .favorite-colors .color {
   color: #ffffff;
   font-weight: bold;
+  min-width: 200px;
+}
+
+.colors {
+  justify-content: center;
+  align-items: center;
+}
+
+.favorite-colors-subsection .color {
+  margin: 10% 20%;
+  text-align: center;
+  padding: 4%;
 }
 
 .favorite-colors .color.green {
@@ -235,81 +264,65 @@ section.hero .hero-right img {
   background-color: #3498db;
 }
 
-/* still-curious section styles */
-.still-curious {
-  margin: 10% 0%;
+/*
+  ======================================
+  Start Still-curious section styles
+  ======================================
+*/
+
+.still-curious header div {
+  text-transform: capitalize;
+  color: #523223;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
-.still-curious header {
+.still-curious header p {
+  color: #7cad5c;
+  font-weight: bold;
+  margin: 0% 0% 1% 0%;
+  font-size: 0.8rem;
+  padding: 0% 5%;
+}
+
+.still-curious .still-curious-subsection .row {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column;
-  margin: 5% 0%;
 }
 
-.still-curious header > p:first-child {
-  text-transform: capitalize;
+.still-curious .still-curious-subsection p {
+  text-align: center;
+  padding: 10%;
+  line-height: 2rem;
   color: #523223;
-  font-size: 30px;
+  font-size: 1rem;
   font-weight: bold;
-  display: flex;
 }
 
-.still-curious header > p:not(:first-child) {
-  color: #523223;
-  font-size: 1.3rem;
-  font-weight: normal;
-  display: flex;
-}
-
-.still-curious-subsection.row {
-  justify-content: space-between;
-}
-.still-curious-subsection:nth-child(even) {
+.still-curious .still-curious-subsection .change-flip {
+  flex-direction: row-reverse;
   background-color: #7cad5c;
 }
 
-.still-curious-subsection p {
-  font-size: 1.5rem;
-  color: #523223;
-  padding: 0% 15%;
-}
-
-.still-curious-subsection p span {
-  font-weight: bold;
-}
-
-.still-curious-subsection .still-curious-subsection-left {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-
-.still-curious-subsection .still-curious-subsection-right {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-
-/* know more section styles */
-.know-more.row {
-  margin: 10% 0%;
-}
-
-.know-more p,
-.know-more a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-}
+/*
+  ======================================
+  Know-more section styles
+  ======================================
+*/
 
 .know-more p {
   color: #523223;
   font-size: 1.3rem;
-  font-weight: normal;
-  margin: 5% 0%;
+}
+
+.know-more .btn-hobbies {
+  margin: 2% 0%;
+}
+
+.know-more .btn-hobbies a {
+  border-radius: 0.2rem;
+  padding: 1rem;
 }
 
 /*
