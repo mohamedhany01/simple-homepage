@@ -326,28 +326,24 @@ header .navbar-nav {
 }
 
 /*
-==============================
+*****************
 Hobbies page
-==============================
+*****************
 */
 
-/*Hobbies style*/
-
-.hobbies-header,
-.contact-header,
-.gallery-header {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 10% 0%;
-}
+/*
+  ======================================
+  Hobbies section styles
+  ======================================
+*/
 
 .hobbies-header h1,
 .contact-header h1,
 .gallery-header h1 {
   color: #523223;
   font-weight: bold;
-  margin: 0px;
+  margin: 0%;
+  text-transform: uppercase;
 }
 
 .hobbies-header p,
@@ -393,6 +389,73 @@ Hobbies page
   color: #523223;
   line-height: 1.7rem;
   padding: 0% 20%;
+}
+
+/*
+==============================
+Gallery page
+==============================
+*/
+
+.warning {
+  text-align: center;
+}
+
+.warning strong {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: red;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.warning p {
+  color: #7cad5c;
+  font-size: 1.4rem;
+  margin: 2% 0%;
+}
+
+.carousel {
+  min-width: 60%;
+  max-width: 60%;
+  margin: auto;
+}
+.carousel-item .description {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: #7cad5c;
+  color: #523223;
+  padding: 5%;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2rem;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: none;
+  transition: display 0.6s ease-in-out;
+}
+
+.carousel-item:hover .description {
+  display: block;
+}
+.carousel-caption {
+  background-color: #52322391;
+  bottom: 10%;
+}
+
+.carousel-caption h5 {
+  font-weight: bold;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  color: #7cad5c;
+}
+
+.carousel-caption p {
+  margin: 0%;
 }
 
 /*
@@ -451,34 +514,6 @@ Contact page
 
 .form-container .btn-row input {
   padding: 3%;
-}
-
-/*
-==============================
-Gallery page
-==============================
-*/
-
-.warning {
-  text-align: center;
-}
-
-.warning strong {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: red;
-  text-decoration: underline;
-  font-size: 2rem;
-}
-
-.warning p {
-  color: #7cad5c;
-  font-size: 1.4rem;
-  margin: 2% 0%;
-}
-
-.slider {
-  margin: 10% 0%;
 }
 
 /*
