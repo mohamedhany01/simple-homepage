@@ -6,6 +6,21 @@
     
 */
 
+@font-face {
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-family: "Roboto", "sans-serif";
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../fonts/Roboto-Bold.ttf");
+  font-family: "Roboto", "sans-serif";
+  font-weight: bold;
+  font-style: normal;
+}
+
+html,
 body {
   background-color: #dcdbc9;
   font-family: "Roboto";
@@ -39,7 +54,7 @@ body {
 }
 
 .section-my {
-  margin: 5% 0%;
+  margin: 70px 0px;
 }
 /*End Customized components*/
 
@@ -48,24 +63,32 @@ body {
   Start Header and Nav styles 
   ======================================
 */
-header.upper {
-  background-color: #dcdbc9;
+
+.navbar .navbar-brand {
+  margin-right: 5rem;
 }
 
-header .navbar .navbar-brand img {
+.navbar .navbar-brand img {
+  filter: drop-shadow(1px 1px 4px #757070);
+  width: 75px;
+
+  transition: filter 0.2s ease-in-out;
+}
+
+.navbar .navbar-brand img:hover {
   filter: drop-shadow(1px 2px 5px #575252);
 }
 
 /* Start Overwrite bootstrap classes */
-header .navbar-nav {
+.navbar-nav {
   width: 100%;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: bold;
   color: #7cad5c;
 }
@@ -103,78 +126,73 @@ header .navbar-nav {
   background-color: #7cad5c;
 }
 
-.hero .row {
-  justify-content: center;
-  align-items: center;
-}
-
-.hero .hero-left h1 {
+.hero .hero-subsection-left .heading {
   color: #523223;
   text-transform: uppercase;
   font-weight: bold;
-  margin: 0%;
   font-size: 3rem;
+  margin: 0px;
 }
 
-.hero .hero-left .subheading {
+.hero .hero-subsection-left .subheading {
   color: #523223;
   font-weight: bold;
-  margin: 4% 0%;
+  margin: 5px 0px 40px;
   font-size: 1rem;
   text-transform: capitalize;
 }
 
-.hero .hero-left .name {
+.hero .hero-subsection-left .name {
   background-color: #523223;
   text-transform: capitalize;
   position: relative;
   width: 50%;
-  padding: 3%;
-  margin: 0% auto;
+  padding: 10px;
+  margin: 0px auto;
   border-radius: 0.7rem;
 }
 
-.hero .hero-left .name p {
+.hero .hero-subsection-left .name p {
   color: #7cad5c;
   font-weight: bold;
-  padding: 3%;
-  margin: 0%;
-  font-size: 1.5rem;
+  padding: 10px;
+  margin: 0px;
+  font-size: 1rem;
 }
 
-.hero .hero-left .name .bullet {
-  width: 25px;
-  height: 25px;
+.hero .hero-subsection-left .name .bullet {
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   position: absolute;
   background-color: #7cad5c;
   bottom: 0%;
 }
 
-.hero .hero-left .name .bullet.top {
+.hero .hero-subsection-left .name .bullet.top {
   top: 0%;
 }
 
-.hero .hero-left .name .bullet.top.left {
+.hero .hero-subsection-left .name .bullet.top.left {
   top: 0%;
   left: -1%;
 }
 
-.hero .hero-left .name .bullet.top.right {
+.hero .hero-subsection-left .name .bullet.top.right {
   top: 0%;
   right: -1%;
 }
 
-.hero .hero-left .name .bullet.bottom {
+.hero .hero-subsection-left .name .bullet.bottom {
   bottom: 0%;
 }
 
-.hero .hero-left .name .bullet.bottom.left {
+.hero .hero-subsection-left .name .bullet.bottom.left {
   bottom: 0%;
   left: -1%;
 }
 
-.hero .hero-left .name .bullet.bottom.right {
+.hero .hero-subsection-left .name .bullet.bottom.right {
   bottom: 0%;
   right: -1%;
 }
@@ -186,13 +204,9 @@ header .navbar-nav {
 */
 
 .facts header {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   color: #523223;
   font-size: 2rem;
   text-transform: capitalize;
-  margin: 0%;
 }
 
 .facts header .number {
