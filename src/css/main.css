@@ -384,53 +384,65 @@ Hobbies page
 .gallery-header h1 {
   color: #523223;
   font-weight: bold;
-  margin: 0%;
+  margin: 0px;
   text-transform: uppercase;
+  position: relative;
 }
 
 .hobbies-header p,
 .contact-header p,
 .gallery-header p {
-  color: #7cad5c;
-  font-weight: normal;
+  color: #523223;
   font-size: 1.4rem;
-  margin: 2% 0%;
+  margin-top: 50px;
 }
 
-.hobbies {
+.hobby {
   background-color: #7cad5c;
-  margin: 7% 0%;
+  padding: 50px;
 }
 
-.hobbies .frame {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
+.hobby .content{
+  width: 500px;
+}
+.hobby .frame {
+  width: 100%;
+  padding: 4%;
   margin: auto;
+  background-color: #523223;
   position: relative;
 }
 
-.hobbies .frame .img-container {
-  background-color: #523223;
-  padding: 10%;
+.hobby .frame img{
+  border: 3px #ffffff solid;
 }
 
-.hobbies .frame .text-container {
+.hobby .frame .small-text {
   position: absolute;
-  left: 30%;
-  bottom: 2%;
+  left: 50%;
+  bottom: 9%;
+  width: 550px;
+  height: 50px;
+  display: inline-block;
+  line-height: 50px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
   color: #7cad5c;
-  margin: 2% 0%;
   font-weight: bold;
+  font-size: 1rem;
+  background-color: #666565;
+  filter: drop-shadow(2px 2px 3px #523223);
 }
 
-.hobbies .description {
+.hobby .description {
+  margin-top: 30px;
   text-align: center;
-  margin: 4% 0%;
   color: #523223;
-  line-height: 1.7rem;
-  padding: 0% 20%;
+}
+
+.hobby .description p{
+  margin: 0px;
+  line-height: 2rem;
 }
 
 /*
