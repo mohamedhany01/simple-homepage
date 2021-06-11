@@ -470,8 +470,9 @@ Gallery page
 }
 
 .carousel {
-  min-width: 60%;
-  max-width: 60%;
+  width: 600px;
+  min-width: 300px;
+  max-width: 600px;
   margin: auto;
 }
 .carousel-item .description {
@@ -488,12 +489,13 @@ Gallery page
   height: 100%;
   z-index: 99999;
   display: none;
-  transition: display 0.6s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .carousel-item:hover .description {
   display: block;
 }
+
 .carousel-caption {
   background-color: #52322391;
   bottom: 10%;
@@ -518,56 +520,46 @@ Contact page
 ==============================
 */
 
-/* contact style*/
-.form-container {
-  background-color: #dcdbc9;
-  filter: drop-shadow(1px 2px 5px #575252);
-  padding: 5% 7%;
+.contact-form {
+  width: 600px;
+  padding: 20px;
+  margin: 50px 0px;
+  background-color: #523223;
   border-radius: 10px;
-  margin: 0% auto 10%;
-  width: 75%;
+
 }
 
-.form-container form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.form-container form > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  margin: 5% 0%;
-}
-
-.form-container form label {
-  color: #523223;
+.contact-form .form-label{
+  color: #7cad5c;
   font-weight: bold;
+  font-size: 1rem;
+
 }
 
-.form-container input,
-.form-container textarea {
-  width: 70%;
-  margin-top: 2%;
-  border-color: #7cad5c;
-  border-style: solid;
-  border-width: 2px;
+/* Start overwrite bootstrap classes */
+.contact-form .form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #7cad5c;
 }
 
-.form-container textarea {
+.contact-form .form-control::placeholder {
+  color: #523223;
+}
+/* End overwrite bootstrap classes */
+
+.contact-form textarea {
   resize: none;
 }
 
-.form-container .btn-row {
-  width: 50%;
-}
-
-.form-container .btn-row input {
-  padding: 3%;
+.contact-form .btn-styled{
+  margin-top: 30px;
+  width: 300px;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: normal;
 }
 
 /*
