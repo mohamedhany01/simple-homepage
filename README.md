@@ -15,7 +15,7 @@ This is a **cs50x 2021** assessment, the assessment aims to build a homepage wit
 * **Contact Page**
     A page with a contact form.
 
-More details about the assessment please visit [CS50x] (https://cs50.harvard.edu/x/2021/psets/8/homepage)
+More details about the assessment please visit [CS50x](https://cs50.harvard.edu/x/2021/psets/8/homepage)
 
 ***
 
