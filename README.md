@@ -1,4 +1,4 @@
-# Simple Homepage Project [Live Demo](https://google-search-clone-cs50web.netlify.app/)
+# Simple Homepage Project [Live Demo](https://cs50-homepage.netlify.app/)
 A simple homepage that introduces me, my favorite hobbies or extracurricular, or anything else of interest to me.
 
 ***
